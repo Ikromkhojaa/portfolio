@@ -1,0 +1,691 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+body{
+    font-size: 16px;
+    font-family: sans-serif serif ;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+html{
+    position: relative;
+    scroll-behavior: smooth;
+}
+.top a i{
+    margin-top: 3px;
+    color: #484848;
+    transition: all .3s linear;
+}
+.top a i:hover{
+    color: red;
+}
+.top{
+    position: absolute;
+    top: 530px;
+    right: 20px;
+    color: grey;
+    width: 40px;
+    height: 40px;
+    background-color: ;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    z-index: 100;
+    transition: .3s all linear;
+}
+.top:hover{
+    background-color: grey;
+    color: red;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    color: #191919;
+    position: relative;
+    z-index: 2;
+}
+.title-box_span{
+    position: absolute;
+    top: -30px;
+    color: #f4f4f4;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 52px;
+}
+.bac-img{
+    background-image: url(../img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    background-color: black;
+}
+.bac-img_two{
+    background-image: url(../img/cta-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+    background-color: black;
+
+}
+
+.ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.btn{
+    padding: 12px 24px;
+    border: 2px solid white;
+    background-color: unset;
+    color: white;
+    font-weight: bolder;
+    transition: all.3s linear ;
+    outline: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: red;
+    border: 2px solid red;
+    box-shadow: 0, 0, 20px white ;
+}
+
+/* navbar page ****/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+.left-list .left-list_item{
+    color: red;
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+.left-list .left-list_item a{
+    color: whitesmoke;
+}
+
+.right-list a{
+    color: whitesmoke;
+    margin-left: 30px;
+    font-size: 1.2rem;
+}
+.right-list a li{
+    transition: all .25s linear;
+}
+.right-list .blue:hover{
+    color: navy;
+}
+.right-list a .red:hover{
+    color: red;
+    opacity: .9;
+}
+/* navbar page ***end******/
+
+/* ************header******start*** */
+#head{
+    background-color: #333;
+    height: 70px;
+    margin-top: 0px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 100;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a{
+    font-size: 2.5rem;
+    color: whitesmoke;
+    transition: all  .3s  linear;
+}
+.logo a:hover{
+    color: white;
+    opacity: .6;
+}
+#navbar {
+    display: flex;
+    list-style-type: none;
+}
+#navbar .link a{
+    color: whitesmoke;
+    font-size: 1.1rem;
+    padding: 24px 15px;
+    transition: all .3s linear;
+    margin-right: 2px;
+}
+#navbar .link a .icon{
+    margin-left: 5px;
+}
+#navbar a.active{
+    background-color: rgba(226, 165, 165, 0.563);
+    height: 100%;
+    padding:  20px 15px 30px 15px;
+    color:white;
+    border-radius: 5px;
+}
+#navbar .link a:hover{
+    background-color: rgba(226, 165, 165, 0.563);
+    height: 100%;
+    padding:  20px 15px 30px 15px;
+    color:white;
+    border-radius: 5px;
+}
+
+.dropdown{
+    display: none;
+    list-style-type: none;
+}
+
+#navbar .link a:hover > ul{
+    position: absolute;
+}
+#navbar .link a:hover > ul{
+    display: unset;
+    position: absolute;
+    width: 138px;
+    height: auto;
+    background-color: white;
+    top: 70px;
+    color: rgba(197, 51, 51, 0.864);
+    right: 144px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(221, 221, 221, 0.748);
+}
+#navbar .link a:hover > ul li{
+    padding: 5px 10px;
+    transition: all .3s linear;
+}
+#navbar .link a:hover > ul li:hover{
+    color: white;
+    background-color: black;
+}
+
+/* ************header******end*** */
+
+/* ***********section page start#### */
+.section{
+    margin-top: 160px;
+    margin-left: 110px;
+}
+.section .head-title{
+    font-size: 3rem;
+    color: white;
+}
+.section .text{
+    font-size: 1.3rem;
+    color: white;
+    margin: 5px 0px 25px;
+}
+
+/* ***********section end#### */
+
+#section{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.about-text{
+    width: 45%;
+}
+.min-title{
+    font-size: 2rem;
+    line-height: 1.5;
+}
+.min-text{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.about-img{
+    width: 45%;
+}
+.about-img_item{
+    width: 546px;
+    height: 410px;
+}
+.span-text{
+    margin-bottom: 10px;
+}
+.span-check{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    border-radius: 3px;
+    margin-right: 15px;
+    text-align: center;
+    align-items: center;    
+}
+.span-check i{
+    color: red;
+}
+/* ****card - section**** */
+.card-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.card-left{
+    max-width: 380px;
+    height: 276px;
+    border: 1px solid whitesmoke;
+    padding: 50px 30px 30px 40px;
+    transition: all .3s linear;
+    box-shadow: 0px 5px 5px rgba(39, 38, 38, 0.631);
+}
+.card-left:hover{
+    background-color: red;
+    box-shadow: 0 0 20px #999;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+.card-left:hover,
+.number, .card-text, .team-about{
+    color: white;
+}
+.number{
+    font-size: 2rem;
+    color: black;
+    font-weight: bolder;
+}
+.card-text{
+    font-size: 1.8rem;
+    color: black;
+    margin: 10px 0px;
+}
+.team-about{
+    color: #777;
+    letter-spacing: 1.3px;
+    margin-bottom: 20px;
+}
+/* ************about link** */
+
+.about-link{
+    background-color: #F2F2F2;
+    height: 100px;
+    margin-top: 200px;
+    align-items: center;
+}
+.clients-navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.clients-navbar_item img{
+    width: 100px;
+    height: auto;
+    padding-top: 25px;
+    transition: all .3s linear; 
+}
+.clients-navbar_item img:hover{
+    font-size: 1.2rem;
+    transform: scaleX(1.3);
+}
+
+
+/* ********Services cards ***start */
+
+.services-card{
+    margin-top: 50px;
+    width: 390px;
+    height: 276px;
+    text-align: center;
+    padding: 80px 20px 20px;
+    border: 1px solid whitesmoke;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    transition: all .3s linear;
+    margin-bottom: 30px;
+}
+.services-card:hover{
+    background-color: burlywood;
+}
+.icons{
+    color: red;
+    box-shadow: ;
+}
+.nemo-title a{
+    font-size: 28px;
+    color: black;
+}
+.nemo-title{
+    margin: 10px;
+}
+.title-box{
+    position: relative;
+    text-align: center;
+    margin-top: 80px;
+}
+/* ********Services cards ***start** */
+
+.call-section{
+    text-align: center;
+    padding-top: 100px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+.call-title{
+    font-size: 45px;
+    color: white;
+}
+.call-text{
+    font-size: 20px;
+    color: white;
+    margin: 15px 0 50px;
+    font-weight: 600;
+}
+
+/* **********Portfolio Link*****start* */
+
+.portfolio-link{
+    font-size: 20px;
+    color: black;
+    padding: 15px;
+    transition: .3s all linear;
+}
+.portfolio-link:hover{
+    color: red;
+}
+.active{
+    color: red;
+}
+.portfolio{
+    margin-top: 30px;
+}
+.portfolio img{
+    overflow: hidden;
+    width: 390px;
+    height: auto;
+    transition: .3s all linear;
+    margin-bottom: 20px;
+}
+.portfolio img:hover{
+    content: '';
+    transform: scale(1.1);
+    opacity: .7;
+
+}
+/* **********Portfolio Link*****end** */
+
+/* *******PRicing page *start ****/
+.pricing{
+    margin-bottom: 50px;
+}
+.pricing-box{
+    width: 370px;
+    height: 420px;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    text-align: center;
+    border-radius: 10px; 
+}
+
+.price-active{
+    background-color: red;
+    color: white;
+}
+.price-active h4{
+    color: white  !important;
+}
+.price-active .box-span{
+    color: white;
+}
+.price-active .box-btn{
+    background-color: rgba(255, 52, 52, 0.789);
+}
+
+.pricing-box h3{
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+.pricing-box h4{
+    color: red;
+    font-size: 2.4rem;
+}
+.box-span{
+    color: black;
+    opacity: .4;
+    font-size: 16px  !important;
+}
+.pricing-box p{
+    margin: 10px;
+    font-size: 1.1rem;
+}
+.box-text{
+    text-decoration: line-through;
+    opacity: .6;
+}
+.box-btn{
+    padding: 12px 40px;
+    background-color: rgba(255, 52, 52, 0.789);
+    outline: none;
+    border: none;
+    margin-top: 35px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s all linear;
+}
+.box-btn:hover{
+    color: black;
+    background-color: white;
+}
+
+/* *******PRicing page *start ***end***/
+
+/* &**********TEAM******page** */
+ #team{
+     margin-top: 100px;
+ }
+ .team_box{
+     width: 390px;
+     height: 450px;
+     border: 2px solid whitesmoke ;
+     border-radius: 5px;
+     text-align: center;
+     padding: 8px;
+     transition: all .3s linear;
+     margin-bottom: 30px;
+     margin-top: 50px;
+     box-shadow: 0px 1px 3px grey;
+ }
+ .team_box:hover{
+     box-shadow: 5px -3px 5px #555;
+     transform: scale(1.01);
+     background-color: whitesmoke;
+ }
+ .team_box img{
+     width: 150px;
+     height: auto;
+     border-radius: 50%;
+     margin-top: 50px;
+ }
+
+ .team_box_title{
+     font-size: 1.4rem;
+     color: black;
+     font-weight: 700;
+     margin: 10px 0px;
+ }
+ .team_box_span{
+     font-size: 20px;
+     color: #444;
+ }
+ .team_box_text{
+     font-size: 18px;
+     color: black;
+     line-height: 20px;
+     margin-top: 30px;
+ }
+ .social{
+     display: flex;
+     justify-content: space-evenly;
+     margin-top: 30px;
+ }
+ .twitt, .black,
+ .red, .blue{
+     transition: all .3s linear;
+     color: grey;
+ }
+ .blue:hover{
+     color: blue;
+ }
+ .twitt:hover{
+     color: rgb(31, 152, 233);
+ }
+ .red:hover{
+     color: red;
+ }
+ .black:hover{
+     color: black;
+ }
+/* &**********TEAM******page** end*/
+
+/* **********contact*page****start** */
+.contact-section{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+.location{
+    width: 575px;
+    height: 194px;
+    overflow: hidden;
+    border: 1px solid rgb(78, 74, 74);
+    margin-top: 50px;
+    box-shadow: 1px -1px 2px gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.location i{
+    border: 2px dotted red;
+    padding: 10px 14px;
+    border-radius: 50%;
+    color: rgba(206, 37, 37, 0.734);
+    margin-top: 20px;
+    cursor: pointer;
+}
+.contact-box{
+    width: 290px;
+    height: 194px;
+    margin-top: 50px;
+    overflow: hidden;
+    border: 1px solid rgb(78, 74, 74);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px -1px 2px gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-box i{
+    border: 2px dotted red;
+    padding: 10px;
+    border-radius: 50%;
+    color: rgba(206, 37, 37, 0.734);
+    margin-top: 20px;
+    cursor: pointer;
+}
+.contact-title{
+    font-size: 22px;
+    color: #555;
+    padding: 15px 0px;
+}
+.contact-text{
+    font-size: 20px;
+    color: black;
+}
+/* **********contact*page****end** */
+
+.form-contact{
+    display: flex;
+    justify-content: space-between;
+}
+.form{
+    border: 1px solid whitesmoke;
+    padding: 20px;
+}
+
+.map{
+    width: 575px;
+    height: 390px;
+    overflow: hidden;
+}
+
+.form-box{
+    width: 580px;
+    height: 39px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.form-box input{
+    padding: 5px;
+    width: 47%;
+    outline: none;
+    border: 1px solid #999;
+}
+.form .subject{
+    padding: 10px 10pc 50px 12px;
+    outline: none;
+    width: 100%;
+    border: 1px solid #999;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.form textarea{
+    padding: 12px 15px;
+    resize: horizontal;
+    width: 100%;
+    outline: none;
+    margin-bottom: 30px;
+}
+.contact-btn{
+    padding:12px 30px ;
+    background-color: red;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    margin-left: 200px;
+    transition: .3s all linear;
+}
+.contact-btn:hover{
+    color: red;
+    background-color: grey;
+}
